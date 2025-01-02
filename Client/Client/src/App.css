@@ -1,0 +1,171 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.toggle-section {
+  margin-bottom: 2rem;
+}
+
+.toggle-btn {
+  padding: 0.5rem 1.5rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.main-section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.canvas-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+canvas {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: crosshair;
+}
+
+.canvas-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-input {
+  padding: 1rem;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.preview-section {
+  margin: 20px 0;
+}
+
+.image-preview {
+  max-width: 280px;
+  max-height: 280px;
+  object-fit: contain;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.result-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-details {
+  font-size: 1.2rem;
+}
+
+.prediction-value {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.confidence-value {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.error {
+  color: #dc3545;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
