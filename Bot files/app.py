@@ -11,7 +11,7 @@ CORS(app)
 
 # Get the absolute path to the model file
 current_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(current_dir, 'num_reader.keras')
+model_path = os.path.join(current_dir, 'Recognize.keras')
 
 print(f"Looking for model at: {model_path}")
 print("Loading model...")
